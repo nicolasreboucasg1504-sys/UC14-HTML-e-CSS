@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário</title>
+</head>
+<body>
+
+    <h2>Formulário de Cadastro</h2>
+
+    <form>
+
+        
+        <h3>Informações básicas</h3>
+
+        <label>Nome completo:ex:Nicolas Braga Gomes.</label><br>
+        <input type="text" name="nome"><br><br>
+
+        <label>E-mail:</label><br>
+        <input type="email" name="email"><br><br>
+
+        <label>Senha:</label><br>
+        <input type="password" name="senha"><br><br>
+
+
+        
+        <h3>Dados pessoais</h3>
+
+        <label>Data de nascimento:</label><br>
+        <input type="date" name="data_nascimento"><br><br>
+
+        <label>Idade:</label><br>
+        <input type="number" name="idade" min="0" max="120"><br><br>
+
+        <label>Cor favorita:</label><br>
+        <input type="color" name="cor_favorita"><br><br>
+
+
+        
+        <h3>Preferências</h3>
+
+        <label>Gênero:</label><br>
+        <input type="radio" name="genero" value="masculino"> Masculino<br>
+        <input type="radio" name="genero" value="feminino"> Feminino<br>
+        <input type="radio" name="genero" value="outro"> Outro<br><br>
+
+        <label>Interesses:</label><br>
+        <input type="checkbox" name="interesses" value="esporte"> Esporte<br>
+        <input type="checkbox" name="interesses" value="musica"> Música<br>
+        <input type="checkbox" name="interesses" value="tecnologia"> Tecnologia<br>
+        <input type="checkbox" name="interesses" value="arte"> Arte<br><br>
+
+
+    
+        <h3>Outros</h3>
+
+        <label>Upload de arquivo:</label><br>
+        <input type="file" name="arquivo"><br><br>
+
+
+        
+        <input type="submit" value="Enviar">
+
+    </form>
+
+</body>
+</html>
