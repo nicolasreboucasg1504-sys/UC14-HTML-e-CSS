@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(to bottom, #5f7b82, #4f5b57);
+
+    font-family: 'Poppins', sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+
+    padding: 20px;
+}
+
+.container{
+    background: rgba(255,255,255,0.75);
+
+    width: 100%;
+    max-width: 1400px;
+
+    padding: 30px;
+
+    border-radius: 25px;
+
+    text-align: center;
+}
+
+h1{
+    font-size: 50px;
+
+    margin-bottom: 15px;
+
+    color: #3d4444;
+}
+
+.frase{
+    font-size: 20px;
+
+    margin-bottom: 35px;
+
+    color: #3b4545;
+}
+
+/* Imagens */
+
+.imagens{
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 20px;
+}
+
+.imagens img{
+    width: 100%;
+
+    height: 300px;
+
+    object-fit: cover;
+
+    border-radius: 20px;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+/* Celular */
+
+@media(max-width: 800px){
+
+    .imagens{
+        grid-template-columns: 1fr;
+    }
+
+    .imagens img{
+        height: 220px;
+    }
+
+    h1{
+        font-size: 36px;
+    }
+
+    .frase{
+        font-size: 18px;
+    }
+}
