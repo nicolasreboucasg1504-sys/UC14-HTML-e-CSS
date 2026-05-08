@@ -1,0 +1,74 @@
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(to bottom, #5f7b82, #4f5b57);
+
+    font-family: 'Poppins', sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+
+    padding: 30px;
+}
+
+.container{
+    background: rgba(255,255,255,0.7);
+
+    width: 95%;
+    max-width: 1200px;
+
+    padding: 40px;
+
+    border-radius: 25px;
+
+    text-align: center;
+}
+
+h1{
+    font-size: 52px;
+
+    margin-bottom: 20px;
+
+    color: #3d4444;
+}
+
+.frase{
+    font-size: 20px;
+
+    margin-bottom: 40px;
+
+    color: #3b4545;
+}
+
+.imagens{
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 20px;
+}
+
+.imagens img{
+    width: 100%;
+
+    height: 350px;
+
+    object-fit: cover;
+
+    border-radius: 20px;
+}
+
+@media(max-width: 800px){
+
+    .imagens{
+        grid-template-columns: 1fr;
+    }
+
+}
