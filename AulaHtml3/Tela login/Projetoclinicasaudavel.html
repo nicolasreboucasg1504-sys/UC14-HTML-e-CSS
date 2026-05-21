@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica Vida Saudável</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background-color: #5e766d;
+            margin: 0;
+            padding: 0;
+        }
+
+        header{
+            background-color: #7cc6b8;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        #titulo-clinica{
+            margin-bottom: 10px;
+        }
+
+        .bemvindo{
+            font-size: 18px;
+        }
+
+        section{
+            padding: 20px;
+        }
+
+        #servicos{
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .servico{
+            background-color: rgb(58, 101, 112);
+            color: white;
+            border-radius: 10px;
+            padding: 15px;
+            width: 250px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+        }
+
+        #aviso{
+            background-color: #dff5ee;
+            padding: 15px;
+            margin: 20px;
+            border-left: 5px solid #4caf93;
+            border-radius: 5px;
+        }
+
+        .depoimento{
+            background-color: white;
+            padding: 15px;
+            margin: 10px 20px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1 id="titulo-clinica">Clínica Vida Saudável</h1>
+
+        <p class="bemvindo">
+            Bem-vindo à Clínica Vida Saudável! Cuidando da sua saúde com carinho e qualidade.
+        </p>
+    </header>
+
+    <section>
+        <h2>Avaliações</h2>
+
+        <p class="depoimento">
+            "Excelente atendimento e médicos muito atenciosos!"
+        </p>
+
+        <p class="depoimento">
+            "A clínica é organizada e o ambiente é muito confortável."
+        </p>
+    </section>
+
+    <section>
+        <h2>Nossos Serviços</h2>
+
+        <div id="servicos">
+
+            <div class="servico">
+                <h3>Consultas Médicas</h3>
+                <p>Atendimento com profissionais especializados.</p>
+            </div>
+
+            <div class="servico">
+                <h3>Exames</h3>
+                <p>Realizamos exames rápidos e seguros.</p>
+            </div>
+
+            <div class="servico">
+                <h3>Vacinação</h3>
+                <p>Vacinas para crianças, adultos e idosos.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <div id="aviso">
+        <strong>Aviso:</strong> Funcionamos de segunda a sexta, das 8h às 18h.
+        Em casos de emergência, procure o hospital mais próximo.
+    </div>
+<section>
+    <h2>Planos de Saúde</h2>
+
+    <table border="1" cellpadding="10" cellspacing="0">
+        <tr>
+            <th>Plano</th>
+            <th>Benefícios</th>
+            <th>Preço Mensal</th>
+        </tr>
+
+        <tr>
+            <td>Básico</td>
+            <td>Consultas e exames simples</td>
+            <td>R$ 120,00</td>
+        </tr>
+
+        <tr>
+            <td>Premium</td>
+            <td>Consultas, exames e vacinação</td>
+            <td>R$ 220,00</td>
+        </tr>
+
+        <tr>
+            <td>Família</td>
+            <td>Cobertura completa para até 4 pessoas</td>
+            <td>R$ 350,00</td>
+        </tr>
+    </table>
+</section>
+</body>
+</html>
