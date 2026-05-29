@@ -1,0 +1,83 @@
+/* VARIÁVEIS CSS */
+:root{
+  --cor-primaria: #ff4d4d;
+  --cor-secundaria: #1b1b2f;
+  --cor-fundo: #0f0f1a;
+  --cor-texto: #ffffff;
+  --cor-botao: #ff4d4d;
+  --cor-hover: #ff7070;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+  background-color: var(--cor-fundo);
+  height: 100vh;
+
+  /* FLEXBOX */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* CAIXA PRINCIPAL */
+.card{
+  background-color: var(--cor-secundaria);
+  width: 850px;
+  padding: 30px;
+  border-radius: 20px;
+
+  display: flex;
+  align-items: center;
+  gap: 30px;
+
+  box-shadow: 0 0 25px rgba(0,0,0,0.6);
+}
+
+.imagem img{
+  width: 320px;
+  border-radius: 15px;
+}
+
+.conteudo{
+  color: var(--cor-texto);
+}
+
+.titulo{
+  font-size: 42px;
+  margin-bottom: 15px;
+  color: var(--cor-primaria);
+}
+
+.descricao{
+  font-size: 18px;
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+.botoes{
+  display: flex;
+  gap: 15px;
+}
+
+.botao{
+  padding: 12px 22px;
+  border: none;
+  border-radius: 10px;
+  background-color: var(--cor-botao);
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* HOVER */
+.botao:hover{
+  background-color: var(--cor-hover);
+  transform: scale(1.05);
+}
