@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #000;
+    overflow: hidden;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.dvd {
+    position: absolute;
+    width: 120px;
+    height: 60px;
+    border: none;
+    border-radius: 30px;
+    background: white;
+    color: black;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+
+    animation:
+        moverX 6s linear infinite alternate,
+        moverY 4.5s linear infinite alternate;
+}
+
+@keyframes moverX {
+    from {
+        left: 0;
+    }
+    to {
+        left: calc(100vw - 120px);
+    }
+}
+
+@keyframes moverY {
+    from {
+        top: 0;
+    }
+    to {
+        top: calc(100vh - 60px);
+    }
+}
